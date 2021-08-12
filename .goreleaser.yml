@@ -5,5 +5,5 @@ brews:
       owner: kyoh86
       name: homebrew-tap
     folder: Formula
-    homepage: https://github.com/kyoh86/richgo
+    homepage: https://github.com/freewh/richgo
     description: Rich-Go will enrich `go test` outputs with text decorations

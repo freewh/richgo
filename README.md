@@ -3,9 +3,9 @@
 Rich-Go will enrich `go test` outputs with text decorations
 
 [![PkgGoDev](https://pkg.go.dev/badge/kyoh86/richgo)](https://pkg.go.dev/kyoh86/richgo)
-[![Go Report Card](https://goreportcard.com/badge/github.com/kyoh86/richgo)](https://goreportcard.com/report/github.com/kyoh86/richgo)
+[![Go Report Card](https://goreportcard.com/badge/github.com/freewh/richgo)](https://goreportcard.com/report/github.com/freewh/richgo)
 [![Coverage Status](https://img.shields.io/codecov/c/github/kyoh86/richgo.svg)](https://codecov.io/gh/kyoh86/richgo)
-[![Release](https://github.com/kyoh86/richgo/workflows/Release/badge.svg)](https://github.com/kyoh86/richgo/releases)
+[![Release](https://github.com/freewh/richgo/workflows/Release/badge.svg)](https://github.com/freewh/richgo/releases)
 
 [![asciicast](https://asciinema.org/a/99810.png)](https://asciinema.org/a/99810)
 
@@ -14,7 +14,7 @@ Rich-Go will enrich `go test` outputs with text decorations
 (go get):
 
 ```
-go get -u github.com/kyoh86/richgo
+go get -u github.com/freewh/richgo
 ```
 
 (homebrew):
@@ -182,7 +182,7 @@ Rich-Go separate the output-lines in following categories.
 * Build:  
   When the Go fails to build, it prints errors like this:
 
-  <pre><code># github.com/kyoh86/richgo/sample/buildfail
+  <pre><code># github.com/freewh/richgo/sample/buildfail
   sample/buildfail/buildfail_test.go:6: t.Foo undefined (type testing.T has no field or method Foo)</code></pre>
 
 * Start:  
@@ -206,7 +206,7 @@ Rich-Go separate the output-lines in following categories.
 
   <pre><code>--- SKIP: TestSampleSkip (0.00s)
   sample_skip_test.go:6:
-?     github.com/kyoh86/richgo/sample/notest  [no test files]</code></pre>
+?     github.com/freewh/richgo/sample/notest  [no test files]</code></pre>
 
 * PassPackage:  
   When tests in package are successed, Go prints just:
@@ -225,7 +225,7 @@ Rich-Go separate the output-lines in following categories.
 --- PASS: TestCover05 (0.00s)
 PASS
 coverage: 50.0% of statements
-ok  	github.com/kyoh86/richgo/sample/cover05	0.012s	coverage: 50.0% of statements</code></pre>
+ok  	github.com/freewh/richgo/sample/cover05	0.012s	coverage: 50.0% of statements</code></pre>
 
 Each categories can be styled seperately.
 

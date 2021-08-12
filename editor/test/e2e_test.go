@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kyoh86/richgo/config"
-	_ "github.com/kyoh86/richgo/editor/test/statik"
+	"github.com/freewh/richgo/config"
+	_ "github.com/freewh/richgo/editor/test/statik"
 	"github.com/rakyll/statik/fs"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

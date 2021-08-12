@@ -17,7 +17,7 @@ func TestInGlobal(t *testing.T) {
 	os.Setenv("HOME", "/")
 	os.Setenv("GOPATH", "/")
 	os.Setenv("GOROOT", "/foo/bar/path/not/exists")
-	os.Setenv("PWD", "/home/kyoh86/go/src/github.com/kyoh86/richgo")
+	os.Setenv("PWD", "/home/kyoh86/go/src/github.com/freewh/richgo")
 	err := os.Setenv(LocalOnlyEnvName, "0")
 	if err != nil {
 		t.Errorf("failed to set env: %s", err)
@@ -34,7 +34,7 @@ func TestInGlobalWithNotCoveredEnv(t *testing.T) {
 	os.Setenv("HOME", "/home/kyoh86")
 	os.Setenv("GOPATH", "/home/kyoh86/go")
 	os.Unsetenv("GOROOT")
-	os.Setenv("PWD", "/home/kyoh86/go/src/github.com/kyoh86/richgo")
+	os.Setenv("PWD", "/home/kyoh86/go/src/github.com/freewh/richgo")
 	isDirForTest = func(path string) bool {
 		return len(path) > 0
 	}
@@ -78,7 +78,7 @@ func TestInLocal(t *testing.T) {
 
 func TestLoad(t *testing.T) {
 	t.Run("no trick", func(t *testing.T) {
-		if err := os.Setenv("PWD", "/home/kyoh86/go/src/github.com/kyoh86/richgo"); err != nil {
+		if err := os.Setenv("PWD", "/home/kyoh86/go/src/github.com/freewh/richgo"); err != nil {
 			t.Errorf("failed to set env: %s", err)
 			t.FailNow()
 		}
@@ -91,7 +91,7 @@ func TestLoad(t *testing.T) {
 	})
 
 	t.Run("with valid files", func(t *testing.T) {
-		if err := os.Setenv("PWD", "/home/kyoh86/go/src/github.com/kyoh86/richgo"); err != nil {
+		if err := os.Setenv("PWD", "/home/kyoh86/go/src/github.com/freewh/richgo"); err != nil {
 			t.Errorf("failed to set env: %s", err)
 			t.FailNow()
 		}

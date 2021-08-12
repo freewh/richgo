@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/kyoh86/richgo/config"
-	"github.com/kyoh86/richgo/editor"
+	"github.com/freewh/richgo/config"
+	"github.com/freewh/richgo/editor"
 	"github.com/wacul/ptr"
 )
 

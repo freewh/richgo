@@ -1,4 +1,4 @@
-module github.com/kyoh86/richgo
+module github.com/freewh/richgo
 
 require (
 	github.com/kyoh86/xdg v1.2.0
@@ -11,4 +11,4 @@ require (
 	gopkg.in/yaml.v2 v2.4.0
 )
 
-go 1.13
+go 1.16

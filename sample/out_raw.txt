@@ -1,4 +1,4 @@
-# github.com/kyoh86/richgo/sample/buildfail [github.com/kyoh86/richgo/sample/buildfail.test]
+# github.com/freewh/richgo/sample/buildfail [github.com/freewh/richgo/sample/buildfail.test]
 sample/buildfail/buildfail_test.go:8:7: t.Foo undefined (type *testing.T has no field or method Foo)
 === RUN   TestSampleNG
     sample_ng_test.go:9: It's not OK... :(
@@ -27,27 +27,27 @@ time:2017-01-01T01:01:01+09:00
     --- PASS: TestSampleTimeout/SubtestTimeout (3.00s)
 FAIL
 coverage: [no statements]
-FAIL	github.com/kyoh86/richgo/sample	3.003s
-FAIL	github.com/kyoh86/richgo/sample/buildfail [build failed]
+FAIL	github.com/freewh/richgo/sample	3.003s
+FAIL	github.com/freewh/richgo/sample/buildfail [build failed]
 === RUN   TestCover05
 --- PASS: TestCover05 (0.00s)
 PASS
 coverage: 50.0% of statements
-ok  	github.com/kyoh86/richgo/sample/cover05	(cached)	coverage: 50.0% of statements
+ok  	github.com/freewh/richgo/sample/cover05	(cached)	coverage: 50.0% of statements
 === RUN   TestCoverAll
 --- PASS: TestCoverAll (0.00s)
 PASS
 coverage: 100.0% of statements
-ok  	github.com/kyoh86/richgo/sample/coverall	(cached)	coverage: 100.0% of statements
+ok  	github.com/freewh/richgo/sample/coverall	(cached)	coverage: 100.0% of statements
 testing: warning: no tests to run
 PASS
 coverage: 0.0% of statements
-ok  	github.com/kyoh86/richgo/sample/emptytest	(cached)	coverage: 0.0% of statements [no tests to run]
+ok  	github.com/freewh/richgo/sample/emptytest	(cached)	coverage: 0.0% of statements [no tests to run]
 === RUN   TestNocover
     nocover_test.go:8: accept
 --- PASS: TestNocover (0.00s)
 PASS
 coverage: 0.0% of statements
-ok  	github.com/kyoh86/richgo/sample/nocover	(cached)	coverage: 0.0% of statements
-?   	github.com/kyoh86/richgo/sample/notest	[no test files]
+ok  	github.com/freewh/richgo/sample/nocover	(cached)	coverage: 0.0% of statements
+?   	github.com/freewh/richgo/sample/notest	[no test files]
 FAIL

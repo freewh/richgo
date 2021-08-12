@@ -6,9 +6,9 @@ import (
 	"os/exec"
 	"syscall"
 
-	"github.com/kyoh86/richgo/config"
-	"github.com/kyoh86/richgo/editor"
-	"github.com/kyoh86/richgo/editor/test"
+	"github.com/freewh/richgo/config"
+	"github.com/freewh/richgo/editor"
+	"github.com/freewh/richgo/editor/test"
 )
 
 const testFilterCmd = "testfilter"
@@ -82,8 +82,5 @@ func main() {
 }
 
 func formatWriteCloser(wc io.WriteCloser, factory factoryFunc) io.WriteCloser {
-	if editor.Formattable(os.Stderr) {
-		return editor.Stream(wc, factory())
-	}
-	return editor.Stream(wc, editor.Parrot())
+	return editor.Stream(wc, factory())
 }
